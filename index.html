@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Symptoms - Medical Diagnosis</title>
+</head>
+<body>
+    <img src="{{ url_for('static', filename='med2.jpg') }}" alt="App Logo">
+
+    <div class="container">
+        <h1>Enter Your Symptoms</h1>
+        <form method="POST">
+            <h3>Respiratory Symptoms</h3>
+            <label>
+                <input type="checkbox" name="cough"> Cough
+            </label><br>
+            <label>
+                <input type="checkbox" name="sorethroat"> Sore Throat
+            </label><br>
+            <label>
+                <input type="checkbox" name="chestpain"> Chest Pain
+            </label><br>
+            <label>
+                <input type="checkbox" name="breath"> Shortness of Breath
+            </label><br>
+            <label>
+                <input type="checkbox" name="wheezing"> Wheezing
+            </label><br>
+
+            <h3>Gastrointestinal Symptoms</h3>
+            <label>
+                <input type="checkbox" name="stomachPain"> Stomach Pain
+            </label><br>
+            <label>
+                <input type="checkbox" name="nausea"> Nausea
+            </label><br>
+            <label>
+                <input type="checkbox" name="vomiting"> Vomiting
+            </label><br>
+            <label>
+                <input type="checkbox" name="diarrhea"> Diarrhea
+            </label><br>
+            <label>
+                <input type="checkbox" name="bloating"> Bloating
+            </label><br>
+
+            <h3>Musculoskeletal Symptoms</h3>
+            <label>
+                <input type="checkbox" name="jointPain"> Joint Pain
+            </label><br>
+            <label>
+                <input type="checkbox" name="muscleWeakness"> Muscle Weakness
+            </label><br>
+            <label>
+                <input type="checkbox" name="stiffness"> Stiffness
+            </label><br>
+            <label>
+                <input type="checkbox" name="swelling"> Swelling
+            </label><br>
+
+            <h3>Neurological Symptoms</h3>
+            <label>
+                <input type="checkbox" name="headache"> Headache
+            </label><br>
+            <label>
+                <input type="checkbox" name="dizziness"> Dizziness
+            </label><br>
+            <label>
+                <input type="checkbox" name="confusion"> Confusion
+            </label><br>
+
+            <h3>Skin-Related Symptoms</h3>
+            <label>
+                <input type="checkbox" name="rash"> Rash
+            </label><br>
+            <label>
+                <input type="checkbox" name="itching"> Itching
+            </label><br>
+            <label>
+                <input type="checkbox" name="redness"> Redness
+            </label><br>
+
+            <h3>General Symptoms</h3>
+            <label>
+                <input type="checkbox" name="f1"> Fever
+            </label><br>
+            <label>
+                <input type="checkbox" name="f2"> Fatigue
+            </label><br>
+
+            <br><br>
+            <input type="submit" value="Submit Diagnosis">
+        </form>
+        <br>
+        <a href="/home" class="btn">Return to Homepage</a> <!-- Added navigation link -->
+    </div>
+</body>
+</html>

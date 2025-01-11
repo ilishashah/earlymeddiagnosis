@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Medical Diagnosis</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+        .header {
+            font-size: 2rem;
+            color: #333;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .homepage-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+            text-align: center;
+        }
+        h1 {
+            font-size: 4rem;
+            color: #5466cb;
+        }
+        p {
+            font-size: 1.5rem;
+            color: #666;
+            margin: 20px 0;
+        }
+        .start-btn {
+            font-size: 1.25rem;
+            padding: 15px 30px;
+            background-color: #5466cb;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .start-btn:hover {
+            background-color: #3e4a9e;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Medical Diagnosis Web Application</div>
+    <div class="homepage-container">
+        <h1>Welcome</h1>
+        <p>Your trusted solution for symptom analysis and medical guidance.</p>
+        <a href="/symptoms" class="start-btn">Start Diagnosis</a>
+    </div>
+</body>
+</html>
